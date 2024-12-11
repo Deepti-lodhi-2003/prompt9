@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.container .box1 {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+}
+
+.container .box1 h2 {
+    background-image: linear-gradient(to right, #b16cffdc, #f9cfcfcb);
+    z-index: 100;
+    position: relative;
+    top: -25%;
+    width: 90%;
+    height: 20%;
+    left: -95%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+
+}
+
+.container .box1 img {
+    background-color: blue;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.container .box2 {
+    background-image: url("./img/bm.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+}
+
+.box2 .form-container {
+    background-color: rgba(14, 14, 14, 0.695);
+    width: 65%;
+    height: 85%;
+    position: relative;
+    left: 150%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 1px 1px 25px rgb(50, 50, 50);
+}
+
+.box2 .form-container .form {
+    width: 95%;
+    height: 95%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.box2 img {
+    width: 60%;
+    height: 92%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+}
+
+.box2 .form-container .form .input-field {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 3%;
+    position: relative;
+    top: 20%;
+    padding-left: 5%;
+    font-size: 19px;
+    border-bottom: 1px solid black;
+    background-color: rgba(255, 255, 255, 0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.box2 .form-container .form .input-field::placeholder {
+    color: #fcfcfcd6;
+}
+
+
+.box2 .form-container .form .input-field-check {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 5%;
+    top: 20%;
+    margin-bottom: 3%;
+    float: left;
+}
+
+.form .agree {
+    font-size: 15px;
+    text-align: left;
+    position: relative;
+    left: 6%;
+    top: 19.4%;
+    color: rgb(251, 251, 251);
+}
+.box2 .form-container .form .input-field-button {
+    width: 100%;
+    height: 55px;
+    border-radius: 50px;
+    margin-bottom: 3%;
+    color: rgb(253, 253, 253);
+    font-weight: 600;
+    position: relative;
+    top: 20%;
+    font-size: 25px;
+    border: none;
+    background-color: rgba(146, 191, 0, 0.918);
+    box-shadow: 1px 1px 2px rgb(40, 39, 39), inset 1px 1px 2px rgb(37, 36, 36);
+}
+.box2 .form-container .form .input-field-button:hover{
+    background-color: white;
+    color:rgba(146, 191, 0, 0.918) ;
+    border: 2px solid rgba(146, 191, 0, 0.918);
+}
+.form h1,
+h2,
+p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.form h1 {
+    color: rgba(146, 191, 0, 0.918);
+    font-size: 40px;
+}
+
+.form p {
+    position: relative;
+    top: 15%;
+    font-size: 20px;
+}
+
+@media (max-width:600px) {
+
+    .container {
+        overflow: unset;
+        position: unset;
+    }
+
+    .container .box1 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        position: unset;
+    }
+
+    .container .box1 h2 {
+        width: 95%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -25%;
+        left: -92.3%;
+        transform: translate(100%, -0.5%);
+        font-size: 25px;
+        border-radius: 20px;
+    }
+
+    .container .box2 {
+        background-image: url("./img/bm2.jpg");
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .box2 .form-container {
+        width: 95%;
+        height: 95%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .form p {
+        font-size: 18px;
+    }
+
+    .box2 .form-container .form .input-field-button {
+    position: relative;
+    top: 27%;
+    }
+    
+    .box2 .form-container .form .input-field-check {
+        position: relative;
+        top: 23%;
+    }
+
+    .form .agree {
+        font-size: 18px;
+        position: relative;
+        top: 23%;
+        color: rgb(251, 251, 251);
+    }
+
+}
